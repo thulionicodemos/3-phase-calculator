@@ -78,7 +78,7 @@ Run:
 streamlit run painel.py
 ```
 
-Access in your browser:[text](http://localhost:8501)
+Access in your browser:(http://localhost:8501)
 
 ---
 
@@ -97,4 +97,5 @@ python main.py
 Author
 
 Thulio Nicodemos
+
 Electrical Engineering • Power Systems • Python Development
