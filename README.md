@@ -64,6 +64,12 @@ This tool is designed for academic, engineering, and educational use.
 
 ---
 
+## Running online version
+
+Access in your browser: (https://3-phase-circuits-calculator.streamlit.app)
+
+---
+
 ## Running the Streamlit App
 
 Install dependencies:
