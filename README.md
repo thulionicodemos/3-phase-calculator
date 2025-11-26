@@ -17,20 +17,20 @@ This tool is designed for academic, engineering, and educational use.
 
 ## Project Structure
 
-├── painel.py # Streamlit interface (main application)
-├── main.py # CLI version of the analysis tool
-├── circuito_trifasico.py # Core class for system parameters and utilities
-├── calc_circuito_eq_desesq_Y.py # Y-connected (star) analysis (balanced & unbalanced)
-├── calc_circuito_eq_DD.py # Balanced Δ analysis
-├── calc_circuito_deseq_D.py # Unbalanced Δ analysis
-├── calc_corrente.py # Phase currents (Y)
-├── calc_corrente_linha_carga.py # Line currents (Δ)
-├── calc_tensao_carga.py # Phase voltages (star)
-├── calc_tensao_linha_carga.py # Line voltages
-├── calc_potencia.py # Complex, active, reactive, and apparent power
-├── convert.py # Complex number conversions
-├── imprime_polar.py # Polar-format printing utilities
-└── requirements.txt # Dependencies
+├── painel.py # Streamlit interface (main application)  
+├── main.py # CLI version of the analysis tool  
+├── circuito_trifasico.py # Core class for system parameters and utilities  
+├── calc_circuito_eq_desesq_Y.py # Y-connected (star) analysis (balanced & unbalanced)  
+├── calc_circuito_eq_DD.py # Balanced Δ analysis  
+├── calc_circuito_deseq_D.py # Unbalanced Δ analysis  
+├── calc_corrente.py # Phase currents (Y)  
+├── calc_corrente_linha_carga.py # Line currents (Δ)  
+├── calc_tensao_carga.py # Phase voltages (star)  
+├── calc_tensao_linha_carga.py # Line voltages  
+├── calc_potencia.py # Complex, active, reactive, and apparent power  
+├── convert.py # Complex number conversions  
+├── imprime_polar.py # Polar-format printing utilities  
+└── requirements.txt # Dependencies  
 
 ---
 
