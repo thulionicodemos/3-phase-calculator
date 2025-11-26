@@ -103,15 +103,19 @@ def capturar_saida(func, *args, **kwargs):
 
 
 st.title("Calculadora de Circuitos Trifásicos")
+st.title("<small><i>Three-Phase Circuit Calculator</i></small>", unsafe_allow_html=True)
 st.markdown(
     "**Realiza os cálculos de corrente, tensão e potência em configurações Y e Δ.**"
 )
+st.caption("**Performs current, voltage, and power calculations in Y and Δ configurations.**")
 
 # FORMULÁRIO DE PARÂMETROS
 st.header("Parâmetros do Circuito")
+st.caption("Circuit Parameters")
 
 st.markdown("---")
 st.subheader("Selecione o tipo de circuito")
+st.caption("Select the circuit type")
 
 tipo_circuito = st.selectbox(
     "",
@@ -121,6 +125,7 @@ tipo_circuito = st.selectbox(
 # TENSÕES
 st.markdown("---")
 st.subheader("Tensões da Fonte — Forma Polar")
+st.caption("Source Voltages — Polar Pattern")
 
 st.markdown("**Va**")
 col1, col2 = st.columns(2)
@@ -146,6 +151,7 @@ with col2:
 # IMPEDÂNCIAS DE LINHA
 st.markdown("---")
 st.subheader("Impedâncias de Linha")
+st.caption("Line Impedances")
 
 st.markdown("**Za'**")
 col1, col2 = st.columns(2)
@@ -171,6 +177,7 @@ with col2:
 # IMPEDÂNCIAS DA CARGA
 st.markdown("---")
 st.subheader("Impedâncias da Carga")
+st.caption("Load Impedances")
 
 st.markdown("**Za**")
 col1, col2 = st.columns(2)
@@ -196,6 +203,7 @@ with col2:
 # IMPEDÂNCIA DO NEUTRO
 st.markdown("---")
 st.subheader("Impedância do Neutro")
+st.caption("Neutral Impedance")
 
 st.markdown("**Zn**")
 col1, col2 = st.columns(2)
@@ -235,4 +243,5 @@ if calcular:
     # Exibição dos resultados
     st.markdown("---")
     st.subheader("Resultados")
+    st.caption("Results")
     st.text(saida)
