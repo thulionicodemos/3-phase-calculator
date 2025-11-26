@@ -1,7 +1,3 @@
-# 3-phase-calculator
-Three-Phase circuit calculator with Streamlit - supports Star and Delta systems, balanced or unbalanced, with full phasor-based current, voltage and power computation.
----
-
 # Three-Phase Circuit Analysis Toolkit
 
 ### 3-Phase Circuit Calculator (Y and Δ Networks)
