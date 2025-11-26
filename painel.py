@@ -103,7 +103,7 @@ def capturar_saida(func, *args, **kwargs):
 
 
 st.title("Calculadora de Circuitos Trifásicos")
-st.title("<small><i>Three-Phase Circuit Calculator</i></small>", unsafe_allow_html=True)
+st.caption("Three-Phase Circuit Calculator")
 st.markdown(
     "**Realiza os cálculos de corrente, tensão e potência em configurações Y e Δ.**"
 )
