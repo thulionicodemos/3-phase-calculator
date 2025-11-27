@@ -103,7 +103,7 @@ def capturar_saida(func, *args, **kwargs):
 
 
 st.title("Calculadora de Circuitos Trifásicos")
-st.caption("Three-Phase Circuit Calculator")
+st.caption("**Three-Phase Circuit Calculator**")
 st.markdown(
     "**Realiza os cálculos de corrente, tensão e potência em configurações Y e Δ.**"
 )
@@ -132,24 +132,26 @@ fios_circuito = st.selectbox("Selecione a quantidade de fios", [3, 4], index=0)
 
 # TENSÕES
 st.markdown("---")
-st.subheader("Tensões da Fonte — Forma Polar")
-st.caption("Source Voltages — Polar Pattern")
+st.subheader(
+    "Tensões da Fonte (DEVE SER A TENSÃO DE FASE: Van, Vbn e Vcn) — Forma Polar"
+)
+st.caption("Source Voltages (IT MUST BE THE PHASE VOLTAGE) — Polar Pattern")
 
-st.markdown("**Va**")
+st.markdown("**Van**")
 col1, col2 = st.columns(2)
 with col1:
     Va_mod = st.number_input("Módulo (V)", value=0.0, key="Va_mod")
 with col2:
     Va_ang = st.number_input("Ângulo (°)", value=0.0, key="Va_ang")
 
-st.markdown("**Vb**")
+st.markdown("**Vbn**")
 col1, col2 = st.columns(2)
 with col1:
     Vb_mod = st.number_input("Módulo (V)", value=0.0, key="Vb_mod")
 with col2:
     Vb_ang = st.number_input("Ângulo (°)", value=0.0, key="Vb_ang")
 
-st.markdown("**Vc**")
+st.markdown("**Vcn**")
 col1, col2 = st.columns(2)
 with col1:
     Vc_mod = st.number_input("Módulo (V)", value=0.0, key="Vc_mod")
@@ -187,21 +189,21 @@ st.markdown("---")
 st.subheader("Impedâncias da Carga")
 st.caption("Load Impedances")
 
-st.markdown("**Za**")
+st.markdown("**Za/Zab**")
 col1, col2 = st.columns(2)
 with col1:
     Za_real = st.number_input("Re(Za)", value=0.0, key="Za_real")
 with col2:
     Za_imag = st.number_input("Im(Za)", value=0.0, key="Za_imag")
 
-st.markdown("**Zb**")
+st.markdown("**Zb/Zbc**")
 col1, col2 = st.columns(2)
 with col1:
     Zb_real = st.number_input("Re(Zb)", value=0.0, key="Zb_real")
 with col2:
     Zb_imag = st.number_input("Im(Zb)", value=0.0, key="Zb_imag")
 
-st.markdown("**Zc**")
+st.markdown("**Zc/Zca**")
 col1, col2 = st.columns(2)
 with col1:
     Zc_real = st.number_input("Re(Zc)", value=0.0, key="Zc_real")
