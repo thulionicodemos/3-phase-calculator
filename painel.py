@@ -107,7 +107,9 @@ st.caption("Three-Phase Circuit Calculator")
 st.markdown(
     "**Realiza os cálculos de corrente, tensão e potência em configurações Y e Δ.**"
 )
-st.caption("**Performs current, voltage, and power calculations in Y and Δ configurations.**")
+st.caption(
+    "**Performs current, voltage, and power calculations in Y and Δ configurations.**"
+)
 
 # FORMULÁRIO DE PARÂMETROS
 st.header("Parâmetros do Circuito")
@@ -121,6 +123,12 @@ tipo_circuito = st.selectbox(
     "",
     ["Y (estrela)", "Δ (triângulo) equilibrado", "Δ (triângulo) desequilibrado"],
 )
+
+st.markdown("---")
+st.subheader("Quantidade de Fios")
+st.caption("Number of Wires")
+
+fios_circuito = st.selectbox("Selecione a quantidade de fios", [3, 4], index=0)
 
 # TENSÕES
 st.markdown("---")
@@ -220,7 +228,7 @@ calcular = st.button("Calcular")
 if calcular:
 
     circuito = Circuito(
-        fios=3,
+        fios=fios_circuito,
         va=cv.polar_to_rect(Va_mod, Va_ang),
         vb=cv.polar_to_rect(Vb_mod, Vb_ang),
         vc=cv.polar_to_rect(Vc_mod, Vc_ang),
